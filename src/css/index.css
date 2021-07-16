@@ -83,4 +83,7 @@
        .Desktop {
            display: none;
        }
+       .mobile-screen {
+           width: 100%;
+       }
    }
