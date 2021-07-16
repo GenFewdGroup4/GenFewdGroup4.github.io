@@ -55,28 +55,41 @@
 
             <div class="todo-list-content">
                 <form action="" method="POST">
-                    <div>
-                        <label for="target1">target 1.</label>
-                        <input type="text" name="target1" id="target1" required>
+                    <div class="DueDate">
+                        <label for="DueDate">DueDate.</label>
+                        <input type="text" name="DueDate" id="DueDate" required>
                     </div>
+                    <br>
 
-                    <div>
-                        <label for="target2">target 2.</label>
-                        <input type="text" name="target2" id="target2">
+                    <div class="Name">
+                        <label for="Name'">Name.</label>
+                        <input type="text" name="Name" id="Name" required>
                     </div>
+                    <br>
 
-                    <div>
-                        <label for="target3">target 3.</label>
-                        <input type="text" name="target3" id="target3">
+                    <div class="Description">
+                        <label for="Description">Description.</label>
+                        <input type="text" name="Description" id="Description" required>
                     </div>
+                    <br>
 
-                    <div>
-                        <label for="target4">target 4.</label>
-                        <input type="text" name="target4" id="target4">
+
+                    <div class="AssignedTo">
+                        <label for="AssignedTo">Assigned To.</label>
+                        <input type="text" name="AssignedTo" id="AssignedTo" required>
                     </div>
+                    <br>
 
-                    <button type="reset">reset</button>
-                    <button type="submit">Submit</button>
+                    <div class="Status">
+                        <label for="Status">Status.</label>
+                        <input type="text" name="Status" id="Status" required>
+                    </div>
+                    <br>
+
+                    <div class="submit-button">
+                        <button type="reset">reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -86,6 +99,40 @@
         </div>
     </div>
     <!-- setup-mobile-screen -->
+    <div class="mobile-screen"></div>
+    <div class="nav-bar">
+
+        <div class="logo">
+            <img src="src/image/notesLogo.png">
+            <div class="logo-caption"><span>T</span>o-<span>D</span>o-<span>L</span>ist</div>
+        </div>
+        <div class="logout">
+            <a href="">
+                <button type="button">Logout</button>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- setup-mobile-screen -->
+    <div class="mobile-screen"></div>
+    <div class="nav-bar">
+        <div class="logout">
+            <a href="">
+                <button type="button">Logout</button>
+            </a>
+        </div>
+        <div class="logo">
+            <img src="src/image/notesLogo.png">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="date">
+        <label for="date">Select your date:</label>
+        <input type="date" id="date" name="date">
+
+    </div>
     <div class="mobile-screen">
         <div class="nav-bar">
             <div class="logout">
