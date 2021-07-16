@@ -1,3 +1,18 @@
+.Desktop {
+    width: 100%;
+    display: flex;
+}
+
+.Desktop-left-container {
+    width: 40%;
+    background-color: brown;
+}
+
+.Desktop-right-container {
+    width: 60%;
+    background-color: gray;
+}
+
 .mobile-screen {}
 
 .nav-bar {
