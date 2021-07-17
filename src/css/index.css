@@ -1,3 +1,29 @@
+/* Setup-Desktop */
+
+.Desktop {
+    width: 100%;
+    display: flex;
+}
+
+.Desktop-left-container {
+    width: 40%;
+}
+
+.desktop-calendar {
+    width: 20%;
+}
+
+.todo-list-contnet {
+    width: 80%;
+}
+
+.Desktop-right-container {
+    width: 60%;
+}
+
+.Desktop-list-all-to-do {}
+
+
 /*------mobile screen------*/
 
 .mobile-screen {
@@ -53,10 +79,6 @@
 
 /*--------calendar---------*/
 
-#desktop-calendar {
-    width: 100%;
-}
-
 #mobile-calendar {
     width: 100%;
 }
@@ -66,5 +88,3 @@
         display: none;
     }
 }
-
-Kyle 1 calvin hello
