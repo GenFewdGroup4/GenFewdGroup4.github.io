@@ -2,10 +2,15 @@
     
     .Desktop-top-bar {
         height: 65px;
-        margin-left: 20px;
-        margin-right: 25px;
-        background-color: #94ffe5;
-        border-bottom: ;
+        background-color: rgb(42, 92, 138);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .Desktop {
@@ -24,7 +29,8 @@
     }
     
     .todo-list-content {
-        background-image: url("/src/image/backgound.jpg");
+        background-image: url("../image/backgound.jpg");
+        background-size: cover;
         display: flex;
         justify-content: center;
     }
@@ -62,6 +68,11 @@
         margin-right: 20px;
     }
     
+    .submit-button {
+        display: flex;
+        justify-content: space-around;
+    }
+    
     .button {
         background-image: url();
     }
@@ -71,7 +82,8 @@
         width: 60%;
         display: flex;
         margin: 20px;
-        background-color: #94b8ff;
+        background-image: url("../image/backgound.jpg");
+        background-size: cover;
     }
     
     .Desktop-list-all-to-do {
@@ -87,14 +99,16 @@
         display: flex;
         flex-direction: column;
         font-size: 24px;
-        width: 500px;
-        height: 200px;
+        width: 700px;
+        height: auto;
         background-color: white;
+        border-radius: 20px;
     }
     
     .object-Duedate {
         display: flex;
         justify-content: center;
+        border-radius: 20px;
     }
     
     .object-content {
@@ -102,6 +116,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-radius: 20px;
     }
     
     .object-content p {
