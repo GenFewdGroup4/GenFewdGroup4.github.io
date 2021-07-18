@@ -1,90 +1,178 @@
-/* Setup-Desktop */
-
-.Desktop {
-    width: 100%;
-    display: flex;
-}
-
-.Desktop-left-container {
-    width: 40%;
-}
-
-.desktop-calendar {
-    width: 20%;
-}
-
-.todo-list-contnet {
-    width: 80%;
-}
-
-.Desktop-right-container {
-    width: 60%;
-}
-
-.Desktop-list-all-to-do {}
-
-
-/*------mobile screen------*/
-
-.mobile-screen {
-    display: none;
-}
-
-.nav-bar {
-    display: flex;
-    width: 100%
-}
-
-.logo img {
-    width: 50px;
-    height: 40px;
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    flex: 1;
-}
-
-.logo-caption {
-    display: flex;
-    align-items: center;
-}
-
-.logo-caption span {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.logout {
-    display: flex;
-    flex-direction: center;
-    align-items: center;
-}
-
-.logout button {
-    background-color: #3973be;
-    border: lightblue;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 4px;
-    font-weight: bold;
-}
-
-
-/*--------calendar---------*/
-
-#mobile-calendar {
-    width: 100%;
-}
-
-@media only screen and (max-width:768px) {
+    /* Setup-Desktop */
+    
+    .Desktop-top-bar {
+        height: 65px;
+        margin-left: 20px;
+        margin-right: 25px;
+        background-color: #94ffe5;
+        border-bottom: ;
+    }
+    
     .Desktop {
+        width: 100%;
+        display: flex;
+    }
+    /* Set-up-desktop-left-container */
+    
+    .Desktop-left-container {
+        width: 40%;
+        margin: 20px;
+    }
+    
+    .desktop-calendar {
+        width: 1px;
+    }
+    
+    .todo-list-content {
+        background-image: url("/src/image/backgound.jpg");
+        display: flex;
+        justify-content: center;
+    }
+    
+    .DueDate,
+    .Name,
+    .Description,
+    .AssignedTo,
+    .Status {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 50px;
+        width: 300px;
+        height: 65px;
+    }
+    
+    .DueDate label,
+    .Name label,
+    .Description label,
+    .AssignedTo label,
+    .Status label {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .DueDate input,
+    .Name input,
+    .Description input,
+    .AssignedTo input,
+    .Status input {
+        display: flex;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .button {
+        background-image: url();
+    }
+    /* Set-up-desktop-right-container */
+    
+    .Desktop-right-container {
+        width: 60%;
+        display: flex;
+        margin: 20px;
+        background-color: #94b8ff;
+    }
+    
+    .Desktop-list-all-to-do {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    /* Setup-object */
+    
+    .object {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        width: 500px;
+        height: 200px;
+        background-color: white;
+    }
+    
+    .object-Duedate {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .object-content {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .object-content p {
+        margin: 4px;
+    }
+    /* Setup-object-button */
+    
+    .Desktop-list-all-to-do-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    /*------mobile screen------*/
+    
+    .mobile-screen {
         display: none;
     }
-}
+    
+    .nav-bar {
+        display: flex;
+        width: 100%
+    }
+    
+    .logo img {
+        width: 50px;
+        height: 40px;
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+        flex: 1;
+    }
+    
+    .logo-caption {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-caption span {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    .logout {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+    }
+    
+    .logout button {
+        background-color: #3973be;
+        border: lightblue;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    /*--------calendar---------*/
+    
+    #mobile-calendar {
+        width: 100%;
+    }
+    
+    @media only screen and (max-width:768px) {
+        .Desktop {
+            display: none;
+        }
+    }
