@@ -96,7 +96,13 @@
 
                     <div class="Status">
                         <label for="Status">Status:</label>
-                        <input type="text" name="Status" id="Status" required>
+                        <input type="text" name="Status" id="Status" list="status-options" required>
+                        <datalist id="status-options">
+                      <option value=""></option>
+                      <option value="REVIEW"></option>
+                      <option value="IN PROGRESS"></option>
+                      <option value="TO DO"></option>
+                     </datalist>
                     </div>
                     <br>
 
@@ -146,24 +152,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="object">
+
+                <div class="object card" style="width: 18rem;">
                     <div class="object-Duedate">DueDate</div>
-                    <div class="object-content">
-                        <p>Name</p>
-                        <p>Description</p>
-                        <p>Assigned To</p>
-                        <p>Status</p>
-                    </div>
-                    <div class="object-button">
-                        <div class="delete">
-                            <button type="reset"><img src="./src/image/trash-icon.svg"></button>
-                        </div>
-                        <div class="done">
-                            <label for="done">Done</label>
-                            <input type="checkbox" name="done" id="done">
-                        </div>
-                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Name</li>
+                        <li class="list-group-item">Description</li>
+                        <li class="list-group-item">Assigned To</li>
+                        <li class="list-group-item">Status</li>
+                        <li class="list-group-item">
+                            <span class="delete">
+                                <button type="reset"><img src="./src/image/trash-icon.svg"></button>
+                            </span>
+                            <span class="done">
+                                <label for="done">Done</label>
+                                <input type="checkbox" name="done" id="done">
+                            </span>
+                    </ul>
                 </div>
+            </div>
+            <div class="">
+
 
             </div>
         </div>
