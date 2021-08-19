@@ -1,0 +1,113 @@
+/* top-nav-bar-setup */
+
+.Desktop-main {
+    background-image: linear-gradient(to bottom right, rgb(146, 217, 250), rgb(242, 253, 227));
+}
+
+.Desktop-nav-bar {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+
+/* desktop-text-area and button set up */
+
+.desktop-text-container {
+    border-bottom: 1px solid black;
+}
+
+.desktop-text-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.due-date label,
+.name label,
+.description label,
+.assigned-to label,
+.status label {
+    font-size: 20px;
+}
+
+.due-date input,
+.name input,
+.description input,
+.assigned-to input,
+.status input {
+    width: 280px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.desktop-text-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.submit-button button {
+    width: 68px;
+    height: 28px;
+    margin: 10px;
+}
+
+
+/* desktop list-all-text-content setup */
+
+.list-tetx {
+    text-align: center;
+}
+
+.list-all-text-content-button {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.delete-button {
+    width: 35px;
+    height: 35px;
+}
+
+.finish-button {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.edit-button {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
+
+
+/* footer setup */
+
+.about-us {
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}

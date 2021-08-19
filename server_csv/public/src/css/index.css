@@ -19,11 +19,18 @@
     display: flex;
 }
 
+.fc {
+    overflow: scroll;
+}
+
 
 /* Set-up-desktop-left-container */
 
-.Desktop-left-container {
+.Desktop-left {
     width: 40%;
+}
+
+.Desktop-left-container {
     margin: 20px;
     height: 980px;
 }
