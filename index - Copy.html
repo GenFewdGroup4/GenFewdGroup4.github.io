@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Desktop">
+        <div class="Desktop-left-container">
+            <div class="calendar">
+                <label for="date">select your date!:</label>
+                <input type="date" id="date" name="date" value="2021-07-16" min="2021-01-01" max="2021-12-31">
+            </div>
+
+            <div class="todo-list-content">
+                <form action="" method="POST">
+                    <div>
+                        <label for="target1">target 1.</label>
+                        <input type="text" name="target1" id="target1" required>
+                    </div>
+
+                    <div>
+                        <label for="target2">target 2.</label>
+                        <input type="text" name="target2" id="target2">
+                    </div>
+
+                    <div>
+                        <label for="target3">target 3.</label>
+                        <input type="text" name="target3" id="target3">
+                    </div>
+
+                    <div>
+                        <label for="target4">target 4.</label>
+                        <input type="text" name="target4" id="target4">
+                    </div>
+
+                    <button type="reset">reset</button>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="Desktop-right-container">
+            <div>123</div>
+            <!-- setup-mobile-screen -->
+            <div class="mobile-screen"></div>
+            <div class="nav-bar">
+
+                <div class="logo">
+                    <img src="src/image/notesLogo.png">
+                    <div class="logo-caption"><span>T</span>o-<span>D</span>o-<span>L</span>ist</div>
+                </div>
+                <div class="logout">
+                    <a href="">
+                        <button type="button">Logout</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- setup-mobile-screen -->
+        <div class="mobile-screen"></div>
+        <div class="nav-bar">
+            <div class="logout">
+                <a href="">
+                    <button type="button">Logout</button>
+                </a>
+            </div>
+            <div class="logo">
+                <img src="src/image/notesLogo.png">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="date">
+            <label for="date">Select your date:</label>
+            <input type="date" id="date" name="date">
+
+        </div>
+</body>
+
+</html>
