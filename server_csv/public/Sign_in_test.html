@@ -19,7 +19,7 @@
 </head>
 
 <body class="text-center">
-    <form class="form-signin">
+    <form class="form" id="FormData" action="./index.html" id="fetchLoginForm" method="post">
         <div class="container">
             <img class="mb-4" src="./src/image/image.png" class="img-thumbnail" alt="Cinque Terre" width="154" height="136">
         </div>
@@ -30,15 +30,12 @@
         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
         <div class="checkbox mb-3">
         </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <div>
-            <button class="btn btn-lg btn-block" type="submit-signup">--Sign up--</button>
-            <button class="btn btn-lg btn-block" type="submit">--Log in--</button>
-        </div>
+        <button class="btn btn-lg btn-block" id='fetchButton' type="submit-signup">--Sign up--</button>
+
+        <button class="btn btn-lg btn-block" id='fetchButton' type="submit">--Log in--</button>
     </form>
+    <footer></footer>
+    <script src="./Sign_in_test.js"></script>
 </body>
 
 </html>
