@@ -1,3 +1,6 @@
+/* .Desktop-setup */
+
+
 /* top-nav-bar-setup */
 
 .Desktop-main {
@@ -89,6 +92,10 @@
     /* border-bottom: 1px solid black; */
 }
 
+.list-all-text-content {
+    text-align: center;
+}
+
 .list-all-text-content-button {
     text-align: center;
     border-bottom: 1px solid black;
@@ -120,3 +127,6 @@
     border-bottom: 1px solid black;
     text-align: center;
 }
+
+
+/* -------------- */

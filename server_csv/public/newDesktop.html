@@ -17,13 +17,13 @@
             </div>
             <div class="about-me">
                 <div class="facebook">
-                    <a href="#"><img src="./src/image/facebook-icon.svg"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./src/image/facebook-icon.svg"></a>
                 </div>
                 <div class="instagram">
-                    <a href="#"><img src="./src/image/instagram-icon.svg"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./src/image/instagram-icon.svg"></a>
                 </div>
                 <div class="twitter">
-                    <a href="#"><img src="./src/image/twitter-icon.svg"></a>
+                    <a href="https://twitter.com/" target="_blank"><img src="./src/image/twitter-icon.svg"></a>
                 </div>
             </div>
         </div>
@@ -37,67 +37,70 @@
                     <div id="due-date" class="due-date">
                         <label for="duedate">Due Date:</label>
                         <br>
-                        <input type="date" name="duedate" required>
+                        <input type="date" name="duedate">
                     </div>
 
                     <div id="name" class="name">
                         <label for="name'">Name:</label>
                         <br>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name">
                     </div>
 
                     <div id="description" class="description">
                         <label for="description'">Description:</label>
                         <br>
-                        <input type="text" name="description" required>
+                        <input type="text" name="description">
                     </div>
 
                     <div id="assigned-to" class="assigned-to">
-                        <label for="assignedTo'">Assigned:</label>
+                        <label for="assignedto'">Assigned:</label>
                         <br>
-                        <input type="text" name="assignedTo" required>
+                        <input type="text" name="assignedto">
                     </div>
 
                     <div id="status" class="status">
                         <label for="status'">Status:</label>
                         <br>
-                        <input type="text" name="status" required>
+                        <input type="text" name="status">
                     </div>
             </div>
 
             <div class="desktop-text-button">
                 <div class="submit-button">
-                    <button type="reset">Reset</button>
-                    <button id="submit" type="submit">Submit</button>
+                    <button id="show-data" class="show-data" type="reset">Show List</button>
+                    <button id="submit" class="submit" type="submit">Submit</button>
                 </div>
             </div>
             </form>
         </div>
 
-        <div class="list-all-text-content">
-            <div class="list-tetx">
-                <p>Date: </p>
-                <p>Name: </p>
-                <p>Description: </p>
-                <p>Assigned: </p>
-                <p>Status: </p>
-            </div>
-            <div class="list-all-text-content-button">
-                <button class="delete-button"><img src="./src/image/trash-icon.svg"></button>
-
-                <button class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
-
-                <button class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
-
-            </div>
-
-            <footer>
-                <div class="about-us">
-                    <p>Design by : Matt, Kyle, Calvin</p>
+        <div id="list-all-text-content" class="list-all-text-content">
+            <!-- <form id="list-all-text-content-form">
+                <div class="list-tetx">
+                    <div>NO:</div>
+                    <div>Date: </div>
+                    <div>Name:}</div>
+                    <div>Description: </div>
+                    <div>Assigned:</div>
+                    <div>Status:</div>
                 </div>
-            </footer>
+                <div class="list-all-text-content-button">
+                    <button id="delete-button" class="delete-button"><img src="./src/image/trash-icon.svg"></button>
+
+                    <button id="edit-button" class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
+
+                    <button class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
+                </div>
+            </form> -->
         </div>
+
+        <footer>
+            <div class="about-us">
+                <p>Design by : Matt, Kyle, Calvin</p>
+            </div>
+        </footer>
         <script src="./newDesktop.js"></script>
+    </div>
 </body>
 
 </html>
