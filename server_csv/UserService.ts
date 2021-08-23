@@ -18,7 +18,7 @@ export class UserService {
       return {
         id: userInfo[0],
         username: userInfo[1],
-        password: userInfo[2],
+        password: userInfo[2].replace('\r',''),
       };
     });
 
