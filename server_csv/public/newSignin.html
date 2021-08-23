@@ -19,15 +19,15 @@
 </head>
 
 <body class="text-center">
-    <form class="form" id="FormData" action="./newDesktop.html" id="fetchLoginForm" method="post">
+    <form class="form" action="./index.html" id="fetchLoginForm" method="post">
         <div class="container">
             <img class="mb-4" src="./src/image/image.png" class="img-thumbnail" alt="Cinque Terre" width="154" height="136">
         </div>
         <label for="inputEmail" class="sr-only">Email</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <input type="email" id="username" class="form-control" placeholder="Email address" name="fetchUsername" required autofocus>
         <br>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="password" class="form-control" placeholder="Password" name="fetchPassword" required>
         <div class="checkbox mb-3">
         </div>
         <div class="form-group form-check">
@@ -39,11 +39,11 @@
         <button class="btn btn-lg btn-block" id='fetchButton-password' type="submit-login">--Log in--</button>
     </form>
     <footer>
-        <form class="form" id="FormData-update" action="#" id="fetchLoginForm" method="put"></form>
+        <form class="form" id="FormData-update" action="#" id="fetchLoginForm-update" method="put"></form>
         <button class="btn" id='fetchButton-update' type="submit-changepassword">update</button>
         </form>
     </footer>
-    <script src="./Sign_in_test.js"></script>
+    <script src="./newSignin.js"></script>
 </body>
 
 </html>
