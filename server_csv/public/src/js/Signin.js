@@ -22,6 +22,8 @@ fetchLoginForm.addEventListener('submit', async(event) => {
     console.log(response);
     if (response.ok === true) {
         window.location.replace("../../desktop&mobile.html")
+    } else {
+        alert(`Please enter the right email or password`)
     }
 });
 

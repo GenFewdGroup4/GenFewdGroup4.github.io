@@ -4,7 +4,6 @@ const submit = document.querySelector('#desktop-submit')
 const showDataButton = document.querySelector('#desktop-show-data')
 const listDataFrom = document.querySelector('#list-all-text-content-form')
 
-
 // set up Desktop POST input data to sever and addDate function in the end
 dataForm.addEventListener('submit', async(event) => {
     event.preventDefault();
