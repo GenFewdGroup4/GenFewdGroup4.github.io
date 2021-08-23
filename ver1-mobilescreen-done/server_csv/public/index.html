@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
-    <link rel="stylesheet" href="./src/css/style.css">
+    <meta charset='utf-8' />
+    <!-- connect to css -->
+    <link rel="stylesheet" href="./src/css/index.css">
 
     <!-- connect to boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -34,101 +35,10 @@
             calendar.render();
         });
     </script>
+    <title>To Do List</title>
 </head>
 
-
-
 <body>
-    <div class="Desktop-main">
-        <div class="Desktop-nav-bar">
-            <div class="DesktopLogo">
-                <a href="./newSignin.html"><img src="./src/image/home-icon.svg"></a>
-            </div>
-            <div class="about-me">
-                <div class="facebook">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="./src/image/facebook-icon.svg"></a>
-                </div>
-                <div class="instagram">
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./src/image/instagram-icon.svg"></a>
-                </div>
-                <div class="twitter">
-                    <a href="https://twitter.com/" target="_blank"><img src="./src/image/twitter-icon.svg"></a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="desktop-text-container">
-
-            <div id="desktop-text-area" class="desktop-text-area">
-
-                <form action="http://localhost:8080/" method="POST">
-                    <div id="desktopDuedate" class="desktopDuedate">
-                        <label for="desktopDuedate">Due Date:</label>
-                        <br>
-                        <input type="date" name="desktopDuedate" required>
-                    </div>
-
-                    <div id="desktopName" class="desktopName">
-                        <label for="desktopName'">Name:</label>
-                        <br>
-                        <input type="text" name="desktopName" required>
-                    </div>
-
-                    <div id="desktopDescription" class="desktopDescription">
-                        <label for="desktopDescription'">Description:</label>
-                        <br>
-                        <input type="text" name="desktopDescription" required>
-                    </div>
-
-                    <div id="desktopAssignedto" class="desktopAssignedto">
-                        <label for="desktopAssignedto'">Assigned:</label>
-                        <br>
-                        <input type="text" name="desktopAssignedto" required>
-                    </div>
-
-                    <div id="desktopStatus" class="desktopStatus">
-                        <label for="desktopStatus'">Status:</label>
-                        <br>
-                        <input type="text" name="desktopStatus" required>
-                    </div>
-            </div>
-
-            <div class="desktop-text-button">
-                <div class="desk-submit-button">
-                    <button id="desktop-show-data" class="desktop-show-data" type="reset">Show List</button>
-                    <button id="desktop-submit" class="desktop-submit" type="submit">Submit</button>
-                </div>
-            </div>
-            </form>
-        </div>
-
-        <div id="list-all-text-content" class="list-all-text-content">
-            <!-- <form id="list-all-text-content-form">
-                <div class="list-tetx">
-                    <div>NO:</div>
-                    <div>Date: </div>
-                    <div>Name:}</div>
-                    <div>Description: </div>
-                    <div>Assigned:</div>
-                    <div>Status:</div>
-                </div>
-                <div class="list-all-text-content-button">
-                    <button id="delete-button" class="delete-button"><img src="./src/image/trash-icon.svg"></button>
-
-                    <button id="edit-button" class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
-                </div>
-            </form> -->
-        </div>
-
-        <footer>
-            <div class="about-us">
-                <p>Design by : Matt, Kyle, Calvin</p>
-            </div>
-        </footer>
-        <script src="./src/js/desktop.js"></script>
-    </div>
-
     <!-- setup-mobile-screen -->
     <div class="mobile-screen ">
 
@@ -249,7 +159,12 @@
         </div>
     </div>
 
-    <script src="./src/js/mobile.js"></script>
+
+
+
+
+    <script src="src/js/desktopScreen.js"></script>
+    <script src="src/js/mobileScreen.js"></script>
 </body>
 
 </html>
