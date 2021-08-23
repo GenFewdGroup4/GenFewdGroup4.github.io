@@ -127,9 +127,7 @@ async function addData() {
     }
 
     if (response.ok) {
-        toDoData.innerHTML = `
-            You has been added new list please click show list to check!!
-            `
+        showData()
     }
 
 }
