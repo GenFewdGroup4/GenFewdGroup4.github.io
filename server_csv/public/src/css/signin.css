@@ -19,7 +19,7 @@
      /* Center the image */
      background-repeat: no-repeat;
      /* Do not repeat the image */
-     background-image: url("./src/image/clear-sky-mountains-4k-k0-1125x2436.jpeg");
+     background-image: url("../image/clear-sky-mountains-4k-k0-1125x2436.jpeg");
  }
  
  .form-signin {
@@ -27,6 +27,7 @@
      max-width: 330px;
      padding: 15px;
      margin: 0 auto;
+     background-image: url("../../desktop&mobile.html");
  }
  
  .form-signin .checkbox {
