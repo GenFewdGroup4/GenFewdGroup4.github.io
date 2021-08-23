@@ -16,6 +16,7 @@ dataForm.addEventListener('submit', async(event) => {
         assignedto: form.assignedto.value,
         status: form.status.value
     }
+
     console.log(dataObj)
 
     const response = await fetch('http://localhost:8080/todolist', {
@@ -55,13 +56,13 @@ async function showData() {
                     <div>Status: ${dataArr[i].status}</div>
                 </div>
                 <div class="list-all-text-content-button">
-                    <button id="delete-button" class="delete-button" data-id="${dataArr[i].id}"><img src="./src/image/trash-icon.svg"></button>
                 
-                    <button id="edit-button" class="edit-button" data-id="${dataArr[i].id}"><img src="./src/image/edit-icon.svg"></i></button>
+                <button id="edit-button" class="edit-button" data-id="${dataArr[i].id}"><img src="./src/image/edit-icon.svg"></i></button>
                 
-                    <button id="finish-button" class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
+                <button id="finish-button" class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
                 </div> 
-            </form>
+                </form>
+                <button id="${dataArr[i].id}" class="delete-button" data-id="${dataArr[i].id}"><img src="./src/image/trash-icon.svg"></button>
         </div>
         `
     }
@@ -115,13 +116,13 @@ async function addData() {
                     <div>Status: ${dataArr[i].status}</div>
                 </div>
                 <div class="list-all-text-content-button">
-                    <button id="delete-button" class="delete-button"><img src="./src/image/trash-icon.svg"></button>
-
-                    <button id="edit-button" class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
-
-                    <button class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
+                
+                <button id="edit-button" class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
+                
+                <button class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
                 </div> 
-            </form>
+                </form>
+                <button id="${dataArr[i].id}" class="delete-button"><img src="./src/image/trash-icon.svg"></button>
         </div>
         `
     }
