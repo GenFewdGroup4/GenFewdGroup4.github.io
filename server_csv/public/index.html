@@ -5,391 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <!-------------calender---------------->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css" rel="stylesheet">
-
-    <meta charset='utf-8' />
-    <link href='fullcalendar/main.css' rel='stylesheet' />
-    <script src='fullcalendar/main.js'></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('desktop-calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth'
-            });
-            calendar.render();
-        });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('mobile-calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth'
-            });
-            calendar.render();
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <title>To Do List</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="Desktop-top-bar">
-        <div class="logo">
-            <a href="./Cover2.html"><img src="./src/image/home-icon.svg"></a>
-        </div>
-        <!-- <div class="abou-me">
-            <div class="facebook">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/facebook-icon.svg"></a>
+    <div class="Desktop-main">
+        <div class="Desktop-nav-bar">
+            <div class="desktop-logo">
+                <a href="#"><img src="./src/image/home-icon.svg"></a>
             </div>
-            <div class="instagram">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/instagram-icon.svg"></a>
-            </div>
-            <div class="twitter">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/twitter-icon.svg"></a>
-            </div>
-        </div> -->
-    </div>
-
-    <div class="Desktop">
-
-        <div class="Desktop-left">
-            <div class="Desktop-left-container">
-                <div id="desktop-calendar">
+            <div class="desktop-about-me">
+                <div class="desktop-facebook">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./src/image/facebook-icon.svg"></a>
                 </div>
-
-                <div class="todo-list-content">
-                    <form action="" method="POST">
-                        <div class="DueDate">
-                            <label for="DueDate">DueDate:</label>
-                            <input type="text" name="DueDate" id="DueDate" value="19-07-2021" required>
-                        </div>
-                        <br>
-
-                        <div id="Name" class="Name">
-                            <label for="Name'">Name:</label>
-                            <input type="text" name="Name" id="Name" required>
-                        </div>
-                        <br>
-
-                        <div id="Description" class="Description">
-                            <label for="Description">Description:</label>
-                            <input type="text" name="Description" id="Description" required>
-                        </div>
-                        <br>
-
-
-                        <div id="AssignedTo" class="AssignedTo">
-                            <label for="AssignedTo">Assigned To:</label>
-                            <input type="text" name="AssignedTo" id="AssignedTo" required>
-                        </div>
-                        <br>
-
-                        <div id="Status" class="Status">
-                            <label for="Status">Status:</label>
-                            <input type="text" name="Status" id="Status" list="status-options" required>
-                            <datalist id="status-options">
-                      <option value=""></option>
-                      <option value="REVIEW"></option>
-                      <option value="IN PROGRESS"></option>
-                      <option value="TO DO"></option>
-                     </datalist>
-                        </div>
-                        <br>
-
-                        <div id="submit-button" class="submit-button">
-                            <button type="reset">reset</button>
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
+                <div class="desktop-instagram">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./src/image/instagram-icon.svg"></a>
                 </div>
-            </div>
-        </div>
-
-        <div class="Desktop-right-container">
-            <div id="Desktop-list-all-to-do" class="Desktop-list-all-to-do">
-                <div id="object-card" class="object-card" style="width: 18rem;">
-                    <div class=" object-Duedate ">DueDate</div>
-                    <ul class="list-group-list-group-flush">
-                        <li class="list-group-item ">Name</li>
-                        <li class="list-group-item ">Description</li>
-                        <li class="list-group-item ">Assigned To</li>
-                        <li class="list-group-item ">Status</li>
-                        <li class="list-group-item ">
-                            <div class="object-button">
-                                <div class="delete ">
-                                    <button type="reset "><img src="./src/image/trash-icon.svg"></button>
-                                </div>
-                                <div class="done ">
-                                    <label for="done">Done</label>
-                                    <input type="checkbox" name="done" id="done">
-                                </div>
-                            </div>
-                    </ul>
-                </div>
-
-                <div class="object-card" style="width: 18rem;">
-                    <div class="object-Duedate ">DueDate</div>
-                    <ul class="list-group-list-group-flush">
-                        <li class="list-group-item ">Name</li>
-                        <li class="list-group-item ">Description</li>
-                        <li class="list-group-item ">Assigned To</li>
-                        <li class="list-group-item ">Status</li>
-                        <li class="list-group-item ">
-                            <div class="object-button">
-                                <div class="delete ">
-                                    <button type="reset "><img src="./src/image/trash-icon.svg"></button>
-                                </div>
-                                <div class="done ">
-                                    <label for="done">Done</label>
-                                    <input type="checkbox" name="done" id="done">
-                                </div>
-                            </div>
-                    </ul>
-                </div>
-
-                <div class="object-card " style="width: 18rem; ">
-                    <div class="object-Duedate ">DueDate</div>
-                    <ul class="list-group-list-group-flush">
-                        <li class="list-group-item ">Name</li>
-                        <li class="list-group-item ">Description</li>
-                        <li class="list-group-item ">Assigned To</li>
-                        <li class="list-group-item ">Status</li>
-                        <li class="list-group-item ">
-                            <div class="object-button">
-                                <div class="delete ">
-                                    <button type="reset "><img src="./src/image/trash-icon.svg"></button>
-                                </div>
-                                <div class="done ">
-                                    <label for="done">Done</label>
-                                    <input type="checkbox" name="done" id="done">
-                                </div>
-                            </div>
-                    </ul>
-                </div>
-
-                <div class="object-card " style="width: 18rem; ">
-                    <div class="object-Duedate ">DueDate</div>
-                    <ul class="list-group-list-group-flush ">
-                        <li class="list-group-item ">Name</li>
-                        <li class="list-group-item ">Description</li>
-                        <li class="list-group-item ">Assigned To</li>
-                        <li class="list-group-item ">Status</li>
-                        <li class="list-group-item ">
-                            <div class="object-button">
-                                <div class="delete ">
-                                    <button type="reset "><img src="./src/image/trash-icon.svg"></button>
-                                </div>
-                                <div class="done ">
-                                    <label for="done">Done</label>
-                                    <input type="checkbox" name="done" id="done">
-                                </div>
-                            </div>
-                    </ul>
-                </div>
-
-                <div class="object-card" style="width: 18rem;">
-                    <div class="object-Duedate ">DueDate</div>
-                    <ul class="list-group-list-group-flush">
-                        <li class="list-group-item">Name</li>
-                        <li class="list-group-item">Description</li>
-                        <li class="list-group-item">Assigned To</li>
-                        <li class="list-group-item">Status</li>
-                        <li class="list-group-item">
-                            <div class="object-button">
-                                <div class="delete ">
-                                    <button type="reset "><img src="./src/image/trash-icon.svg"></button>
-                                </div>
-                                <div class="done ">
-                                    <label for="done">Done</label>
-                                    <input type="checkbox" name="done" id="done">
-                                </div>
-                            </div>
-                    </ul>
-                </div>
-
-                <div class="object-card" style="width: 18rem;">
-                    <div class="object-Duedate">DueDate</div>
-                    <ul class="list-group-list-group-flush">
-                        <li class="list-group-item">Name</li>
-                        <li class="list-group-item">Description</li>
-                        <li class="list-group-item">Assigned To</li>
-                        <li class="list-group-item">Status</li>
-                        <li class="list-group-item">
-                            <div class="object-button">
-                                <span class="delete ">
-                                        <button type="reset "><img src="./src/image/trash-icon.svg "></button>
-                                    </span>
-                                <span class="done ">
-                                        <label for="done ">Done</label>
-                                        <input type="checkbox" name="done" id="done">
-                                </span>
-                            </div>
-                    </ul>
+                <div class="desktop-twitter">
+                    <a href="https://twitter.com/" target="_blank"><img src="./src/image/twitter-icon.svg"></a>
                 </div>
             </div>
         </div>
 
 
-    </div>
+        <div class="desktop-text-container">
 
+            <div id="desktop-text-area" class="desktop-text-area">
 
-
-
-    <!-- setup-mobile-screen -->
-    <div class="mobile-screen ">
-
-        <nav class="navbar navbar-dark bg-dark ">
-            <!-- Navbar content -->
-            <div class="logo ">
-                <img src="src/image/b6cde81d1c489b0e20d85a6e06c5f8f9.png ">
-                <div class="logo-caption "><span>T</span>o-<span>D</span>o-<span>L</span>IST</div>
-            </div>
-            <div class="logout ">
-                <a href="./Sign_in.html ">
-                    <button type="button ">Logout</button>
-                </a>
-            </div>
-        </nav>
-        <br>
-        <div class="for-calendar ">
-            <div id='mobile-calendar'></div>
-        </div>
-
-        <br>
-        <div class="list-container ">
-            <div class="title ">Please input your Informations!</div>
-            <br>
-            <form action="./index2.html " method="POST ">
-
-                <div class="table ">
-
-                    <table>
-                        <tr>
-                            <td>
-                                <lable for="due-date ">Due Date:</lable>
-                            </td>
-                            <td>
-                                <input type="text " size="50 " name="due-date " id="due-date " value="19/07/21 " required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <lable for="name ">Name:</lable>
-                            </td>
-                            <td>
-                                <input type="text " size="50 " name="name " id="name " value="Kyle " required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <lable for="description ">Description:</lable>
-                            </td>
-                            <td>
-                                <input type="text " size="50 " name="description " id="description " value="assignment " required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <lable for="status ">Status:</lable>
-                            </td>
-                            <td>
-                                <input type="text " size="50 " name="status " id="status " value="submitted before 19/07/21 " required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><br></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <lable for="assigned-to ">Assigned To:</lable>
-                            </td>
-                            <td>
-                                <input type="text " size="50 " name="assigned-to " id="assigned-to " value="Everyone " required>
-                            </td>
-                        </tr>
-
-                    </table>
-
-                </div>
-                <br>
-
-                <div class="submit-button ">
-                    <div class="sbutton ">
-
-                        <button type="submit ">Submit!</button>
-
+                <form action="http://localhost:8080/" method="POST">
+                    <div id="due-date" class="due-date">
+                        <label for="duedate">Due Date:</label>
+                        <br>
+                        <input type="date" name="duedate" required>
                     </div>
-                    <div class="rbutton ">
 
-                        <button type="reset ">Reset!</button>
-
+                    <div id="name" class="name">
+                        <label for="name'">Name:</label>
+                        <br>
+                        <input type="text" name="name" required>
                     </div>
+
+                    <div id="description" class="description">
+                        <label for="description'">Description:</label>
+                        <br>
+                        <input type="text" name="description" required>
+                    </div>
+
+                    <div id="assigned-to" class="assigned-to">
+                        <label for="assignedto'">Assigned:</label>
+                        <br>
+                        <input type="text" name="assignedto" required>
+                    </div>
+
+                    <div id="status" class="status">
+                        <label for="status'">Status:</label>
+                        <br>
+                        <input type="text" name="status" required>
+                    </div>
+            </div>
+
+            <div class="desktop-text-button">
+                <div class="submit-button">
+                    <button id="show-data" class="show-data" type="reset">Show List</button>
+                    <button id="submit" class="submit" type="submit">Submit</button>
                 </div>
+            </div>
             </form>
-            <br>
-            <div class="list-button ">
-                <a href="./index2.html ">
-                    <button type="button ">All List!</button>
-                </a>
-            </div>
-
-
-
-
-
-
-
         </div>
+
+        <div id="list-all-text-content" class="list-all-text-content">
+            <!-- <form id="list-all-text-content-form">
+                <div class="list-tetx">
+                    <div>NO:</div>
+                    <div>Date: </div>
+                    <div>Name:}</div>
+                    <div>Description: </div>
+                    <div>Assigned:</div>
+                    <div>Status:</div>
+                </div>
+                <div class="list-all-text-content-button">
+                    <button id="delete-button" class="delete-button"><img src="./src/image/trash-icon.svg"></button>
+
+                    <button id="edit-button" class="edit-button"><img src="./src/image/edit-icon.svg"></i></button>
+
+                    <button class="finish-button"><img src="./src/image/finish-button.svg"></i></button>
+                </div>
+            </form> -->
+        </div>
+
+        <footer>
+            <div class="desktop-about-us">
+                <p>Design by : Matt, Kyle, Calvin</p>
+            </div>
+        </footer>
+        <script src="index.js"></script>
     </div>
-
-
-
-
-
-
-    <script src="./main.js"></script>
 </body>
 
 </html>
-<!-- <div class="abou-me">
-            <div class="facebook">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/facebook-icon.svg"></a>
-            </div>
-            <div class="instagram">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/instagram-icon.svg"></a>
-            </div>
-            <div class="twitter">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/twitter-icon.svg"></a>
-            </div>
-        </div> -->
-<!-- <div class="abou-me">
-            <div class="facebook">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/facebook-icon.svg"></a>
-            </div>
-            <div class="instagram">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/instagram-icon.svg"></a>
-            </div>
-            <div class="twitter">
-                <a href="#"><img src="../GenFewdGroup4-project/src/image/twitter-icon.svg"></a>
-            </div>
-        </div> -->

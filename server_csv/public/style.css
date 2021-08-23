@@ -1,3 +1,6 @@
+/* .Desktop-setup */
+
+
 /* top-nav-bar-setup */
 
 .Desktop-main {
@@ -11,21 +14,21 @@
     border-bottom: 1px solid black;
 }
 
-.facebook,
-.instagram,
-.twitter {
+.desktop-facebook,
+.desktop-instagram,
+.desktop-twitter {
     width: 30px;
     height: 30px;
     margin: 10px;
 }
 
-.logo {
+.desktop-logo {
     width: 40px;
     height: 40px;
     margin: 10px;
 }
 
-.about-me {
+.desktop-about-me {
     display: flex;
     align-items: center;
     margin: 10px;
@@ -89,6 +92,10 @@
     /* border-bottom: 1px solid black; */
 }
 
+.list-all-text-content {
+    text-align: center;
+}
+
 .list-all-text-content-button {
     text-align: center;
     border-bottom: 1px solid black;
@@ -115,8 +122,11 @@
 
 /* footer setup */
 
-.about-us {
+.desktop-about-us {
     margin-bottom: 20px;
     border-bottom: 1px solid black;
     text-align: center;
 }
+
+
+/* -------------- */
