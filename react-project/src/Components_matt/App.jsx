@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -6,15 +5,17 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Login from './Components/login/login'
-import Signup from './Components/signup/signup'
-import User from './Components/user/user'
-import Todolist from './Components/todolist/todolist'
+import Login from './login/login'
+import Signup from './signup/signup'
+import User from './user/user'
+import Todolist from './todolist/todolist'
+import DesktopApp from '../DesktopApp'
 
  function App() {
   return (
     <Router>
       <div>
+        <Route path="(/|/login|/signup)" exact>
         <ul>
           <li class="home">
             <Link to="/" class='link-home'>Home</Link>
@@ -25,10 +26,12 @@ import Todolist from './Components/todolist/todolist'
           <li>
             <Link to="/signup">Signup</Link>
           </li>
+          <li>
+            <Link to="/DesktopApp"></Link>
+          </li>
         </ul>
-
-        <hr />
-
+        </Route>
+        
         <Switch>
           <Route exact path="/">
             <User />
@@ -41,6 +44,9 @@ import Todolist from './Components/todolist/todolist'
           </Route>
           <Route path='/todolist'>
             <Todolist />
+          </Route>
+          <Route path='/DesktopApp'>
+            <DesktopApp />
           </Route>
         </Switch>
       </div>

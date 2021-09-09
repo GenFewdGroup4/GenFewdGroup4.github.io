@@ -14,7 +14,7 @@ export default function User() {
     }
 
     return (
-        <div>
+        <div className='useMain'>
             <button onClick={handleLoginClick}>Login</button>
             <button onClick={handleSignupClick}>Signup</button>
         </div>

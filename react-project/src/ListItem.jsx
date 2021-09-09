@@ -6,13 +6,12 @@ import editIcon from './img/edit-icon.svg';
 const ListItem =({id, duedate, name, description, assignedto, status, deleteData, }) => {
 
     function deleteList() {
+        console.log(123)
         deleteData(function(prev) {
             return prev.filter(list => list.id !== id)
         })
 
     }
-
-    
 
     return(
         <div>
@@ -26,7 +25,7 @@ const ListItem =({id, duedate, name, description, assignedto, status, deleteData
                 </div>
             </div>
             <div className="list-all-text-content-button">
-                <button className="desktopDeleteButton"><img src={(trashIcon)} onClick={deleteList} /></button>
+                <button className="desktopDeleteButton" onClick={deleteList}><img src={(trashIcon)} /></button>
                 <button className="edit-button"><img src={(editIcon)} /></button>
             </div>
         </div>

@@ -1,10 +1,12 @@
 import React from "react";
 import './DesktopNavBar.css'
+import { useHistory } from 'react-router';
 
 import facebookLogo from '../img/facebook-icon.svg'
 import logoutLogo from '../img/sign-out-alt-solid.svg'
 import instagramLogo from '../img/instagram-icon.svg'
 import twitterLogo from '../img/twitter-icon.svg'
+import { NavLink } from "react-router-dom";
 
 
 const DesktopNavBar =() => {
@@ -12,7 +14,7 @@ const DesktopNavBar =() => {
         <div className="Desktop-nav-bar">
             <div className="DesktopSignOut">
                 <div>
-                    <a href="＃"><img src={logoutLogo} /></a>
+                    <a href='#'><img src={logoutLogo} /></a>
                 </div>
             </div>
             <div className="about-me">

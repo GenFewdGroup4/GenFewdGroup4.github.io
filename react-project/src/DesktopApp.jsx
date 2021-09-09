@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import './App.css'
+import './DesktopApp.css'
 
 import DesktopNavBar from './DesktopNavBar/DesktopNavbar';
 import DesktopInput from './DesktopInput/DesktopInput'
 import DesktopList from './DesktopList/DesktopList'
 import DesktopFooter from './DesktopFooter/DesktopFooter'
 
-const App =() => {
+const DesktopApp =() => {
 
     async function getDateFetch(){
         const res = await fetch ("http://localhost:8080/todolist")
@@ -30,4 +30,4 @@ const App =() => {
     )
 }
 
-export default App ;
+export default DesktopApp ;

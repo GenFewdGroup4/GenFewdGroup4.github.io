@@ -1,4 +1,4 @@
-import {useRef, useCallback, useState} from 'react'
+import { useRef, useCallback, useState } from 'react'
 import { renderIntoDocument } from 'react-dom/test-utils';
 import { useHistory } from "react-router-dom";
 import './login.css'
@@ -28,19 +28,23 @@ export default function Login() {
 
         if (jsonResponse.message === 'success') {
             alert('good')
-            history.push('/todolist')
+            history.push('/DesktopApp')
         } else {
             alert('bad: ' + jsonResponse.message)
         }
-            
+
     }, [usernameRef, passwordRef])
-    
-    return <div>
-        <div class="div-login">Login~~</div>
-        <div>username: <input ref={usernameRef} /></div>
-        <div>password: <input ref={passwordRef} /></div>
-        {errMsg !== '' ? <div>error: {errMsg}</div> : null}
-        <button onClick={handleClick} class="button">login</button>
-    </div>
-    
-}
+
+    return <div className = 'login' >
+        <
+        div className = "div-login" > Login~~ < /div> <
+        div > username: < input ref = { usernameRef }
+    value = 'matt@gmail.com' / > < /div> <
+        div > password: < input ref = { passwordRef }
+    value = '123' / > < /div> {
+        errMsg !== '' ? < div > error : { errMsg } < /div> : null} <
+            button onClick = { handleClick }
+        class = "button" > login < /button> <
+            /div>
+
+    }

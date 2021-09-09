@@ -64,7 +64,7 @@ const DesktopInput =( {add} ) => {
 
                         <div className="desktopDescription">
                         <label>Description:</label>
-                            <br />
+                        <br />
                             <input type="text" value={description} onChange={descriptionChange} required={true} />
                         </div>
 
@@ -82,7 +82,7 @@ const DesktopInput =( {add} ) => {
 
                         <div className="desktop-text-button">
                             <div className="desk-submit-button">
-                                <button className="desktop-show-data" type="reset">Show List</button>
+                                <button className="desktop-show-data" type="reset"  >Show List</button>
                                 <button className="desktop-submit" type="submit" onClick={addList}>Submit</button>
                             </div>
                         </div>
