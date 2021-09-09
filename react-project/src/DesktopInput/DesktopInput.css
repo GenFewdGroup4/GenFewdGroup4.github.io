@@ -1,0 +1,42 @@
+.desktop-text-container {
+    border-bottom: 1px solid black;
+}
+
+.desktop-text-area {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.desktopDuedate label,
+.desktopName label,
+.desktopDescription label,
+.desktopAssignedto label,
+.desktopStatus label,
+.desktopId label {
+    font-size: 20px;
+}
+
+.desktopDuedate input,
+.desktopName input,
+.desktopDescription input,
+.desktopAssignedto input,
+.desktopStatus input,
+.id input {
+    width: 280px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.desktop-text-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.desktop-show-data,
+.desktop-submit {
+    width: 100px;
+    height: 28px;
+    margin: 10px;
+    border-radius: 20px
+}

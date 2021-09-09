@@ -1,0 +1,26 @@
+.Desktop-nav-bar {
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.DesktopSignOut {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}

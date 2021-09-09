@@ -1,0 +1,29 @@
+.toDoData {
+    text-decoration: line-through;
+}
+
+.list-tetx {
+    text-align: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.list-all-text-content {
+    text-align: center;
+}
+
+.list-all-text-content-button {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.desktopDeleteButton {
+    width: 35px;
+    height: 35px;
+}
+
+.edit-button {
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+}
