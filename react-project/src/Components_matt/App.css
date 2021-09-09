@@ -14,17 +14,17 @@
 }
 
 .App-header {
-    background-color: white;
+    background-color: rgb(225, 255, 250);
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
-    background-color: #282c34;
+    background-color: #8caae642;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: rgba(128, 6, 6, 0.568);
 }
 
 .App-link {
@@ -49,4 +49,51 @@
 
 .link-home {
     color: aqua
+}
+
+.app-div{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(121, 245, 162);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    overflow: hidden;
+    width: 600px;
+}
+
+.app-li{
+    opacity: 1;
+    list-style-type: none;
+    color: rgba(232, 252, 199, 0.466);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.app-home{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link-app{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+.link-app--user{
+    color: white;
+}
+
+.link-app--home{
+    color: rgba(82, 130, 129, 0.644);
 }

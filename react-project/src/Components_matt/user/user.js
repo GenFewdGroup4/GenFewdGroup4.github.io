@@ -15,8 +15,8 @@ export default function User() {
 
     return (
         <div className='useMain'>
-            <button onClick={handleLoginClick}>Login</button>
-            <button onClick={handleSignupClick}>Signup</button>
+            <button className='useMain-button-login' onClick={handleLoginClick}>Login</button>
+            <button className='useMain-button-signup' onClick={handleSignupClick}>Signup</button>
         </div>
     )
 }

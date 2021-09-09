@@ -14,19 +14,19 @@ import DesktopApp from '../DesktopApp'
  function App() {
   return (
     <Router>
-      <div>
+      <div classname="app-div">
         <Route path="(/|/login|/signup)" exact>
-        <ul>
-          <li class="home">
-            <Link to="/" class='link-home'>Home</Link>
+        <ul classname="app-ul">
+          <li classname="app-home">
+            <Link to="/" class='link-home' classname="link-app-home">Home</Link>
           </li>
-          <li>
-            <Link to="/login">Login</Link>
+          <li classname="app-home">
+            <Link to="/login" classname="link-app-user">Login</Link>
           </li>
-          <li>
-            <Link to="/signup">Signup</Link>
+          <li classname="app-home">
+            <Link to="/signup" classname="link-app-user">Signup</Link>
           </li>
-          <li>
+          <li classname="app-home">
             <Link to="/DesktopApp"></Link>
           </li>
         </ul>

@@ -1,0 +1,61 @@
+.useMain{
+    padding: 20;
+    background-color: #a0ecdc46;
+    height: 100vh;
+}
+
+.useMain-button {
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+
+    padding: 15px 32px;
+    text-align: center;    
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .useMain-button-login{
+    background-color: #f7e2a8;
+    border-radius: 8px;
+    border-bottom: 4px solid #f5ea52;
+    color: rgba(95, 95, 95, 0.753);
+  }
+  
+  .useMain-button-signup{
+    background-color: #fffc2e96;
+    border-radius: 8px;
+    border-bottom: 4px solid #ff9354;
+    color: rgba(95, 95, 95, 0.925);
+  }
+
+  .useMain-button:hover {
+    background-color: #73ffe1a6;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #74f3d8;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .useMain-button:active {
+    background-color: #b5b6fa;
+    border: none;
+    border-radius: 8px;
+    border-bottom: 4px solid #6080d6;
+    color: #CCC;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+  }
