@@ -6,10 +6,18 @@ import { Service } from "./service";
 import { UserService } from "./UserService";
 import { UserController } from "./UserController";
 import { createUserRoute } from "./userRoutes";
+import cors from "cors";
 
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+const corsOptions = {
+  origin: "*",
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 const service = new Service();
 const controller = new Controller(service);
